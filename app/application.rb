@@ -21,7 +21,7 @@ class Application
         @@cart.each do |item|
           resp.write "#{item}/n"
         end
-      end  
+      end
     elsif req.path.match(/add/)
         search_item = req.params["item"]
         if @@items.include?(search_item)
